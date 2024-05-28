@@ -1,0 +1,39 @@
+<div class="clients-sec container-fluid">
+  <img
+    src="../../assets/images/_ذ___à_ر.png"
+    class="background-img"
+    loading="lazy"
+  />
+
+  <div class="header-container">
+    <h1 class="clients">
+      <h1>C</h1>
+      <h1>L</h1>
+      <h1>I</h1>
+      <h1>E</h1>
+      <h1>N</h1>
+      <h1>T</h1>
+      <h1>S</h1>
+    </h1>
+
+    <span class="our"><span class="highlight">O</span> ur</span>
+  </div>
+  <div class="carousel row">
+    <carousel
+      class="carousel-contain col-md-12"
+      [itemsPerSlide]="itemsPerSlide"
+      [singleSlideOffset]="singleSlideOffset"
+      [interval]="0"
+      [noWrap]="noWrap"
+    >
+      <slide *ngFor="let slide of slides; let index = index" class="col-md-12 slider" >
+        <img
+          [src]="slide.image"
+          alt="Logo"
+          loading="lazy"
+          class="client-logo"
+        />
+      </slide>
+    </carousel>
+  </div>
+</div>

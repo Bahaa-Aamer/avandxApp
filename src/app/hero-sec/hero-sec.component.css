@@ -1,0 +1,19 @@
+.hero-sec {
+  padding: 0;
+}
+
+.row {
+  justify-content: center;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .row {
+    height: 600px;
+  }
+}

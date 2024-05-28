@@ -1,0 +1,125 @@
+.getintouch-sec {
+  color: white;
+  text-align: center;
+  margin-top: 3rem;
+  padding: 4rem 0 2rem 0;
+  background: linear-gradient(
+    to top,
+    rgba(189, 3, 3, 0.447),
+    rgba(46, 42, 42, 0)
+  );
+}
+
+.header-container {
+  padding: 0;
+  margin: 0;
+  height: 4rem;
+}
+
+.getIn {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.getIn :nth-child(4),
+.getIn :nth-child(5) {
+  z-index: 4;
+  margin-left: 1rem;
+}
+
+.getIn :nth-child(5) {
+  margin-left: 0;
+}
+
+.touch {
+  width: inherit;
+  top: -6.3rem;
+
+  font-family: "amatins+";
+  font-size: 8rem;
+  color: rgb(189, 3, 3);
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.highlight {
+  z-index: 3;
+  left: -4.5rem;
+  position: absolute;
+}
+
+.form-container {
+  margin-top: 6rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.text-center {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+form {
+  justify-content: space-between;
+}
+
+form input,
+form textarea {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+form textarea {
+  height: 10rem;
+  resize: none;
+}
+
+form button {
+  color: black;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  padding: 1rem;
+  font-size: 4vh;
+  font-family: "jeko+";
+  letter-spacing: 5px;
+  padding: 0 1rem;
+  margin: 1rem auto;
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  form {
+    justify-content: center;
+  }
+  form input,
+  form textarea {
+    width: 80%;
+  }
+
+  form button {
+    width: 40%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  form button {
+    width: 40%;
+  }
+}

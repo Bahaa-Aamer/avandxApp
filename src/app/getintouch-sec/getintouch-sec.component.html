@@ -1,0 +1,56 @@
+<div class="getintouch-sec container-fluid">
+  <div class="header-container col-md-12">
+    <div class="getIn">
+      <h1>G</h1>
+      <h1>e</h1>
+      <h1>t</h1>
+      <h1>i</h1>
+      <h1>n</h1>
+    </div>
+
+    <span class="touch"><span class="highlight">T</span> ouch</span>
+  </div>
+
+  <div class="form-container row">
+    <P class="text-center col-md-5">
+      PLEASE FILL IN THE QUICK FORM AND WE WILL BE IN TOUCH WITH YOU AS SOON AS
+      POSSIBLE.
+    </P>
+
+    <form
+      class="col-md-8 row"
+      [formGroup]="contactForm"
+      (ngSubmit)="onSubmit()"
+    >
+      <input
+        class="col-md-6"
+        type="text"
+        placeholder="Name"
+        formControlName="name"
+        required
+      />
+      <input
+        class="col-md-5"
+        type="text"
+        placeholder="phone"
+        formControlName="phone"
+        required
+      />
+      <input
+        class="col-md-12"
+        type="email"
+        placeholder="Email"
+        formControlName="email"
+        required
+      />
+      <textarea
+        class="col-md-12 "
+        type="text"
+        placeholder="Message"
+        formControlName="message"
+        required
+      ></textarea>
+      <button class="Submit col-md-3 ">SEND</button>
+    </form>
+  </div>
+</div>
